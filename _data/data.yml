@@ -40,14 +40,11 @@ sidebar:
           level: Professional
 
 career-profile:
-    title: Career Profile
+    title: Welcome
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      Hello, my name is JooYoung Lee. 
+      I am a postgraduate student in POSTECH, undergoing a combined MS/PhD course in Data Systems Laboratory under Professor Wook-Shin Han. 
+      I aim to be a researcher in NLP.
       
 education:
     title: Education
