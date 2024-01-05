@@ -13,7 +13,7 @@ sidebar:
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: jooyounglee@postech.ac.kr
+    email: jooyounglee@postech.ac.kr, jylee@dblab.postech.ac.kr
     #phone: 010 2206 1420
     #timezone: Korea Standard Timezone
     #citizenship:
