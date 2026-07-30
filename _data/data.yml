@@ -4,27 +4,26 @@
 
 sidebar:
     position: right # position of the sidebar : left or right
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Lee JooYoung
-    tagline: 
+    tagline: MS in Computer Science, POSTECH · LLM systems, RAG, NL2SQL
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: jooyounglee@postech.ac.kr, jylee@dblab.postech.ac.kr
-    #phone: 010 2206 1420
+    email: slcks12345@gmail.com
     #timezone: Korea Standard Timezone
     #citizenship:
     #website: #do not add http://
-    #linkedin: 
-    #xing: 
+    #linkedin:
+    #xing:
     github: LeeJYg
     #telegram: # add your nickname without '@' sign
     #gitlab:
     #bitbucket:
-    #twitter: 
+    #twitter:
     #stack-overflow: # Number/Username, e.g. 123456/alandoe
     #codewars:
     #goodreads: # Number-Username, e.g. 123456-alandoe
@@ -42,63 +41,85 @@ sidebar:
 career-profile:
     title: Welcome
     summary: |
-      Hello, my name is JooYoung Lee. 
-      I am a postgraduate student in POSTECH, undergoing a combined MS/PhD course in Data Systems Laboratory under Professor Wook-Shin Han. 
-      I aim to be a researcher in NLP.
-      
+      Hello, my name is JooYoung Lee. I am an MS student at POSTECH Data Systems
+      Laboratory, advised by Professor Wook-Shin Han, and I expect to receive my
+      degree in August 2026.
+
+      I work on the part where a language model becomes a service: deciding when
+      retrieval is actually needed, checking a draft answer against its evidence
+      before releasing it, and turning natural language into SQL that runs.
+
+      My thesis is a negative result. I asked whether LLM-generated consumer
+      personas can forecast demand for products with no sales history, tested it
+      along four routes, and reported that they cannot.
+
 education:
     title: Education
     info:
+      - degree: MS in Computer Science (expected)
+        university: "POSTECH, Data Systems Laboratory (Advisor: Wook-Shin Han)"
+        time: 2024.02 - 2026.08 (expected)
+
       - degree: BSc in Computer Science
         university: Pohang University of Science and Technology
         time: 2019 - 2023
-        details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
-            
+
 experiences:
     title: Experiences
     info:
+      - role: Research Assistant
+        time: 2024.02 - 2026.08
+        company: POSTECH, Data Systems Laboratory
+        details: |
+          - **MCP-based ChatRPA ERP** (industry-academia project, team). Responsible for the
+            NL2SQL agent and the sales-forecasting module. The target database was undecided
+            when development had to start, so dialect-dependent syntax was isolated behind
+            replaceable points rather than guessed; no rework was needed once PostgreSQL was
+            fixed. Execution was verified against PostgreSQL.
+          - **Event-ticker extraction from economic news** (industry-academia pilot).
+            Responsible for the evaluation benchmark and performance measurement.
+          - **LLM unlearning.** Found cases where existing unlearning methods stop working
+            once the dataset's content and format differ from what they were tuned on.
 
+      - role: Teaching Assistant, Algorithms
+        time:
+        company: POSTECH
+        details: |
+          Ran recitation sessions, graded assignments, and held office hours.
 
-certifications:
-      title: Certifications
-      list:
+      - role: Lab Instructor, AI Specialist Program
+        time:
+        company: Samsung Electronics
+        details: |
+          Ran the hands-on lab sessions on RAG and MCP for practitioners across several
+          cohorts, following the lecture portion of the curriculum.
 
 projects:
     title: Projects
-    intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    intro:
     assignments:
+      - title: three-step-qa
+        link: "https://github.com/LeeJYg/three-step-qa"
+        tagline: >
+          Reference implementation of the three-step framework from our KDD Cup 2024 CRAG
+          technical report. Skip retrieval when the model already knows the answer, keep only
+          evidence that passes verification, and abstain when nothing supports the draft.
+          Written for readability, not as the competition codebase.
 
-oss:
-    title: OSS Contributions
-    intro: >
-      You can list your open source software contributions in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    contributions:
+      - title: LLM-Unlearning-Evaluation-for-Privacy-Information
+        link: "https://github.com/LeeJYg/LLM-Unlearning-Evaluation-for-Privacy-Information"
+        tagline: >
+          A survey of privacy attacks on LLMs (extraction, membership inference), unlearning
+          techniques, and how existing evaluation frameworks compare.
 
 publications:
     title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+    intro:
     papers:
-
-
-skills:
-    title: Skills &amp; Proficiency
-
-    toolset:
+      - title: "KDD Cup Meta CRAG 2024 Technical Report: Three-step Question-Answering Framework"
+        authors: Sungho Park, Jeongeum Seok, Jooyoung Lee, Joohyung Yun, Wonseok Lee
+        conference: KDD Cup 2024 CRAG Workshop
+        link: "https://openreview.net/forum?id=G4Ei2QlKnv"
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
